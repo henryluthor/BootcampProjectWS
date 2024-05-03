@@ -5,7 +5,7 @@ namespace BootcampProjectWS.Repository
 {
     public class ClientRepository
     {
-        public bool InsertClient(BootcampprojectContext context, InsertClientModelRequest Model)
+        public string? InsertClient(BootcampprojectContext context, InsertClientModelRequest Model)
         {
             Client client = new Client
             {
@@ -19,8 +19,17 @@ namespace BootcampProjectWS.Repository
             };
 
             context.Clients.Add(client);
-            context.SaveChanges();
-            return true;
+
+            try
+            {
+                context.SaveChanges();
+                return null;
+            }
+            catch(Exception ex)
+            {
+                return ex.InnerException.ToString();
+            }
+            
         }
 
         //nueva funcion

@@ -41,10 +41,26 @@ namespace BootcampProjectWS.Controllers
 
         // POST api/<ClientController>
         [HttpPost]
-        public void Post([FromBody] InsertClientModelRequest Model)
+        public IActionResult Post([FromBody] InsertClientModelRequest Model)
         {
+            string? insertClientResponse;
+            GenericResponse<string> GenResp = new GenericResponse<string>();
+
             ClientRepository clientRepository = new ClientRepository();
-            clientRepository.InsertClient(_context, Model);
+            insertClientResponse = clientRepository.InsertClient(_context, Model);
+
+            if(insertClientResponse == null)
+            {
+                GenResp.StatusCode = 200;
+                GenResp.Message = "Registro exitoso";                
+            }
+            else
+            {
+                GenResp.StatusCode = 500;
+                GenResp.Message = insertClientResponse;
+            }
+
+            return StatusCode(GenResp.StatusCode, GenResp);
         }
 
         // PUT api/<ClientController>/5

@@ -126,6 +126,8 @@ public partial class BootcampprojectContext : DbContext
         {
             entity.ToTable("client");
 
+            entity.HasIndex(e => e.Identification, "UQ_client").IsUnique();
+
             entity.Property(e => e.Clientid).HasColumnName("clientid");
             entity.Property(e => e.Address)
                 .HasMaxLength(100)
