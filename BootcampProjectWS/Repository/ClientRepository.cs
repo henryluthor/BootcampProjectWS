@@ -33,7 +33,7 @@ namespace BootcampProjectWS.Repository
         }
 
         //nueva funcion
-        public bool UpdateClient(BootcampprojectContext context, InsertClientModelRequest Model, int idClient)
+        public string? UpdateClient(BootcampprojectContext context, InsertClientModelRequest Model, int idClient)
         {
             Client clientFind = context.Clients.Where(x => x.Clientid == idClient).FirstOrDefault();
 
@@ -47,12 +47,22 @@ namespace BootcampProjectWS.Repository
                 clientFind.Referenceaddress = Model.Referenceaddress;
                 clientFind.Email = Model.Email;
 
-                context.SaveChanges();
-                return true;
+                try
+                {
+                    //bien
+                    context.SaveChanges();
+                    return null;
+                }
+                catch(Exception ex)
+                {
+                    //mal
+                    return ex.InnerException.ToString();
+                }
+                
             }
             else
             {
-                return false;
+                return "No se encontró cliente.";
             }
 
         }

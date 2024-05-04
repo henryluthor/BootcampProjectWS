@@ -53,7 +53,7 @@ namespace BootcampProjectWS.Controllers
             if(insertClientResponse == null)
             {
                 GenResp.StatusCode = 200;
-                GenResp.Message = "Registro exitoso";
+                GenResp.Message = "Registro exitoso.";
             }
             else
             {
@@ -68,13 +68,26 @@ namespace BootcampProjectWS.Controllers
 
         // PUT api/<ClientController>/5
         [HttpPut("{id}")]
-        public bool Put(int id, [FromBody] InsertClientModelRequest Model)
+        public GenericResponse<string> Put(int id, [FromBody] InsertClientModelRequest Model)
         {
-            bool updateResponse;
+            string updateResponse;
+            GenericResponse<string> GenResp = new GenericResponse<string>();
+
             ClientRepository clientRepository = new ClientRepository();
             updateResponse = clientRepository.UpdateClient(_context, Model, id);
 
-            return updateResponse;
+            if(updateResponse == null)
+            {
+                GenResp.StatusCode=200;
+                GenResp.Message = "Actualización exitosa.";
+            }
+            else
+            {
+                GenResp.StatusCode = 500;
+                GenResp.Message = updateResponse;
+            }
+
+            return GenResp;
         }
 
         // DELETE api/<ClientController>/5
