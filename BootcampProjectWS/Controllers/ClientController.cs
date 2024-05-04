@@ -41,7 +41,8 @@ namespace BootcampProjectWS.Controllers
 
         // POST api/<ClientController>
         [HttpPost]
-        public IActionResult Post([FromBody] InsertClientModelRequest Model)
+        //public IActionResult Post([FromBody] InsertClientModelRequest Model)
+        public GenericResponse<string> Post([FromBody] InsertClientModelRequest Model)
         {
             string? insertClientResponse;
             GenericResponse<string> GenResp = new GenericResponse<string>();
@@ -52,7 +53,7 @@ namespace BootcampProjectWS.Controllers
             if(insertClientResponse == null)
             {
                 GenResp.StatusCode = 200;
-                GenResp.Message = "Registro exitoso";                
+                GenResp.Message = "Registro exitoso";
             }
             else
             {
@@ -60,7 +61,9 @@ namespace BootcampProjectWS.Controllers
                 GenResp.Message = insertClientResponse;
             }
 
-            return StatusCode(GenResp.StatusCode, GenResp);
+            //return StatusCode(GenResp.StatusCode, GenResp); //used when returning IActionResult, busco alternativas porque no me deja hacer nada en el front con una respuesta erronea
+            
+            return GenResp; // En Postman me devuelve statusCode 200 aunque sea 500 u otro error :(
         }
 
         // PUT api/<ClientController>/5
