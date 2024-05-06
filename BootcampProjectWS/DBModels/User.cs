@@ -23,5 +23,9 @@ public partial class User
 
     public int Statusid { get; set; }
 
+    public virtual Rol Rol { get; set; } = null!;
+
+    public virtual Userstatus Status { get; set; } = null!;
+
     public virtual ICollection<Cash> Cashes { get; set; } = new List<Cash>();
 }

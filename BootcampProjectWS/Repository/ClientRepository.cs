@@ -49,13 +49,11 @@ namespace BootcampProjectWS.Repository
 
                 try
                 {
-                    //bien
                     context.SaveChanges();
                     return null;
                 }
                 catch(Exception ex)
                 {
-                    //mal
                     return ex.InnerException.ToString();
                 }
                 

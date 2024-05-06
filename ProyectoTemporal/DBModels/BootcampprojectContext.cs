@@ -331,6 +331,16 @@ public partial class BootcampprojectContext : DbContext
                 .IsUnicode(false)
                 .HasColumnName("username");
 
+            entity.HasOne(d => d.Rol).WithMany(p => p.Users)
+                .HasForeignKey(d => d.Rolid)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_user_rol");
+
+            entity.HasOne(d => d.Status).WithMany(p => p.Users)
+                .HasForeignKey(d => d.Statusid)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_user_userstatus");
+
             entity.HasMany(d => d.Cashes).WithMany(p => p.Users)
                 .UsingEntity<Dictionary<string, object>>(
                     "Usercash",
