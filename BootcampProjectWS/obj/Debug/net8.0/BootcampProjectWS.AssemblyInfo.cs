@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BootcampProjectWS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b386213bc17b4d9aa8d7568d96498a3ca443d029")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+920a71855e11458cb73cb31dc57145cb912f832c")]
 [assembly: System.Reflection.AssemblyProductAttribute("BootcampProjectWS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BootcampProjectWS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -310,10 +310,13 @@ public partial class BootcampprojectContext : DbContext
         {
             entity.ToTable("user");
 
+            entity.HasIndex(e => e.Username, "UQ_user").IsUnique();
+
             entity.Property(e => e.Userid).HasColumnName("userid");
             entity.Property(e => e.Creationdate)
-                .IsRowVersion()
-                .IsConcurrencyToken()
+                //.IsRowVersion()
+                //.IsConcurrencyToken()
+                .HasColumnType("datetime")
                 .HasColumnName("creationdate");
             entity.Property(e => e.Email)
                 .HasMaxLength(100)

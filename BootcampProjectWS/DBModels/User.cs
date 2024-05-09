@@ -15,7 +15,8 @@ public partial class User
 
     public int Rolid { get; set; }
 
-    public byte[] Creationdate { get; set; } = null!;
+    //public byte[] Creationdate { get; set; } = null!;
+    public DateTime Creationdate { get; set; }
 
     public int? Usercreate { get; set; }
 

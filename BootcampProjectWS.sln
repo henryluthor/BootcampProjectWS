@@ -5,7 +5,9 @@ VisualStudioVersion = 17.9.34607.119
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BootcampProjectWS", "BootcampProjectWS\BootcampProjectWS.csproj", "{4674A9D6-4812-4AB6-B2EC-902E9736F8CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProyectoTemporal", "ProyectoTemporal\ProyectoTemporal.csproj", "{8D95BC6F-7219-4D4F-BA35-AE6C0F81DE51}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProyectoTemporal", "ProyectoTemporal\ProyectoTemporal.csproj", "{8D95BC6F-7219-4D4F-BA35-AE6C0F81DE51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryMethod", "LibraryMethod\LibraryMethod.csproj", "{007D8771-8D3E-43DB-BB9A-00350941AE72}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{8D95BC6F-7219-4D4F-BA35-AE6C0F81DE51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D95BC6F-7219-4D4F-BA35-AE6C0F81DE51}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D95BC6F-7219-4D4F-BA35-AE6C0F81DE51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{007D8771-8D3E-43DB-BB9A-00350941AE72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{007D8771-8D3E-43DB-BB9A-00350941AE72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{007D8771-8D3E-43DB-BB9A-00350941AE72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{007D8771-8D3E-43DB-BB9A-00350941AE72}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

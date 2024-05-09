@@ -1,0 +1,13 @@
+C:\Users\hp\source\repos\BootcampProjectWS\LibraryMethod\bin\Debug\net8.0\LibraryMethod.deps.json
+C:\Users\hp\source\repos\BootcampProjectWS\LibraryMethod\bin\Debug\net8.0\LibraryMethod.dll
+C:\Users\hp\source\repos\BootcampProjectWS\LibraryMethod\bin\Debug\net8.0\LibraryMethod.pdb
+C:\Users\hp\source\repos\BootcampProjectWS\LibraryMethod\obj\Debug\net8.0\LibraryMethod.csproj.AssemblyReference.cache
+C:\Users\hp\source\repos\BootcampProjectWS\LibraryMethod\obj\Debug\net8.0\LibraryMethod.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\source\repos\BootcampProjectWS\LibraryMethod\obj\Debug\net8.0\LibraryMethod.AssemblyInfoInputs.cache
+C:\Users\hp\source\repos\BootcampProjectWS\LibraryMethod\obj\Debug\net8.0\LibraryMethod.AssemblyInfo.cs
+C:\Users\hp\source\repos\BootcampProjectWS\LibraryMethod\obj\Debug\net8.0\LibraryMethod.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\BootcampProjectWS\LibraryMethod\obj\Debug\net8.0\LibraryMethod.sourcelink.json
+C:\Users\hp\source\repos\BootcampProjectWS\LibraryMethod\obj\Debug\net8.0\LibraryMethod.dll
+C:\Users\hp\source\repos\BootcampProjectWS\LibraryMethod\obj\Debug\net8.0\refint\LibraryMethod.dll
+C:\Users\hp\source\repos\BootcampProjectWS\LibraryMethod\obj\Debug\net8.0\LibraryMethod.pdb
+C:\Users\hp\source\repos\BootcampProjectWS\LibraryMethod\obj\Debug\net8.0\ref\LibraryMethod.dll

@@ -1,5 +1,7 @@
 using BootcampProjectWS.DBModels;
+using BootcampProjectWS.Filters;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 
 //new line
 var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
@@ -24,7 +26,10 @@ builder.Services.AddCors( options =>
 } );
 
 builder.Services.AddDbContext<BootcampprojectContext>(options =>
-    options.UseSqlServer("Server=LAPTOP-R601H3RA\\SQLEXPRESS;Database=bootcampproject;Trusted_Connection=true;TrustServerCertificate=true;Persist Security Info=true"));
+    //options.UseSqlServer("Server=LAPTOP-R601H3RA\\SQLEXPRESS;Database=bootcampproject;Trusted_Connection=true;TrustServerCertificate=true;Persist Security Info=true"));
+    options.UseSqlServer((new ConfigurationBuilder()).AddJsonFile("appsettings.json").Build().GetSection("DB").GetValue<string>("connection")));
+
+builder.Services.AddScoped<SessionUserFilter>();
 
 var app = builder.Build();
 
