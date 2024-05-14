@@ -314,8 +314,6 @@ public partial class BootcampprojectContext : DbContext
 
             entity.Property(e => e.Userid).HasColumnName("userid");
             entity.Property(e => e.Creationdate)
-                //.IsRowVersion()
-                //.IsConcurrencyToken()
                 .HasColumnType("datetime")
                 .HasColumnName("creationdate");
             entity.Property(e => e.Email)

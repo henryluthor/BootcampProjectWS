@@ -1,4 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BootcampProjectWS.Bll;
+using BootcampProjectWS.DBModels;
+using BootcampProjectWS.Models;
+using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -8,6 +11,16 @@ namespace BootcampProjectWS.Controllers
     [ApiController]
     public class LoginController : ControllerBase
     {
+        BootcampprojectContext ContextDB;
+        LoginBll LoginB;
+
+        public LoginController(BootcampprojectContext context)
+        {
+            ContextDB = context;
+            LoginB = new LoginBll(context);
+        }
+
+
         // GET: api/<LoginController>
         [HttpGet]
         public IEnumerable<string> Get()
@@ -24,9 +37,9 @@ namespace BootcampProjectWS.Controllers
 
         // POST api/<LoginController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public GenericResponse<LoginResponseModel> Post([FromBody] LoginRequestModel model)
         {
-
+            return LoginB.GetLoginUSer(model);
         }
 
         // PUT api/<LoginController>/5

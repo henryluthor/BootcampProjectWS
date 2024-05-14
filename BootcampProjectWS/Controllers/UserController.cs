@@ -28,10 +28,11 @@ namespace BootcampProjectWS.Controllers
         }
 
         // GET api/<UserController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
+        [HttpGet("{username}")]
+        public GenericResponse<User> Get(string username)
         {
-            return "value";
+            //return "value";
+            return UserB.GetUserByUsername(username);
         }
 
         // POST api/<UserController>

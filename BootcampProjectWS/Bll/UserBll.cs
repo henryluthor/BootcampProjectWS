@@ -56,5 +56,38 @@ namespace BootcampProjectWS.Bll
             }
 
         }
+
+
+        public GenericResponse<User> GetUserByUsername(string username)
+        {
+            //ContextDB.Database.BeginTransaction();
+
+            try
+            {
+                UserRepository userRep = new UserRepository(); 
+
+                User userFound = userRep.SelectUserByUsername(ContextDB, username);
+
+                User user = userFound;
+                user.Password = (new MethodsEncryptHelper().DecryptPassword(userFound.Password));
+
+                return new GenericResponse<User>
+                {
+                    StatusCode = 200,
+                    Data = user,
+                    Message = ""
+                };
+            }
+            catch
+            {
+                //ContextDB.Database.RollbackTransaction();
+
+                return new GenericResponse<User>
+                {
+                    StatusCode = 500,
+                    Message = "No se encontró el usuario"
+                };
+            }
+        }
     }
 }

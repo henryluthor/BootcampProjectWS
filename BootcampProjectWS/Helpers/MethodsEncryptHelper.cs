@@ -27,5 +27,29 @@ namespace BootcampProjectWS.Helpers
 
             return encryptH.DecryptValue(value);
         }
+
+        public string EncryptToken(string value)
+        {
+            var sectionKey = (new ConfigurationBuilder()).AddJsonFile("appsettings.json").Build().GetSection("tokenSession");
+            EncryptHelper encryptH = new EncryptHelper
+            {
+                EncKey = sectionKey.GetValue<string>("key"),
+                EncMackKey = sectionKey.GetValue<string>("macKey")
+            };
+
+            return encryptH.EncryptValue(value);
+        }
+
+        public string DecrypToken(string value)
+        {
+            var sectionKey = (new ConfigurationBuilder()).AddJsonFile("appsettings.json").Build().GetSection("tokenSession");
+            EncryptHelper encryptH = new EncryptHelper
+            {
+                EncKey = sectionKey.GetValue<string>("key"),
+                EncMackKey = sectionKey.GetValue<string>("macKey")
+            };
+
+            return encryptH.DecryptValue(value);
+        }
     }
 }

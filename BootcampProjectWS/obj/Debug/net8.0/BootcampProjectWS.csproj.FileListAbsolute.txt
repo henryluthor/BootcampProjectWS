@@ -138,3 +138,4 @@ C:\Users\hp\source\repos\BootcampProjectWS\BootcampProjectWS\obj\Debug\net8.0\Bo
 C:\Users\hp\source\repos\BootcampProjectWS\BootcampProjectWS\bin\Debug\net8.0\BouncyCastle.Crypto.dll
 C:\Users\hp\source\repos\BootcampProjectWS\BootcampProjectWS\bin\Debug\net8.0\LibraryMethod.dll
 C:\Users\hp\source\repos\BootcampProjectWS\BootcampProjectWS\bin\Debug\net8.0\LibraryMethod.pdb
+C:\Users\hp\source\repos\BootcampProjectWS\BootcampProjectWS\bin\Debug\net8.0\Newtonsoft.Json.dll
