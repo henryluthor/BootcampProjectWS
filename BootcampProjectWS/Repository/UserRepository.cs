@@ -9,7 +9,6 @@ namespace BootcampProjectWS.Repository
         {
             context.Users.Add(user);
             context.SaveChanges();
-
             return user;
         }
 
