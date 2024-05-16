@@ -398,7 +398,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.String",
+        "Type": "System.Boolean",
         "MediaTypes": [
           "text/plain",
           "application/json",
