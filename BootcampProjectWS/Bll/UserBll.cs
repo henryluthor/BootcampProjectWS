@@ -43,7 +43,7 @@ namespace BootcampProjectWS.Bll
                         Password = (new MethodsEncryptHelper()).EncryptPassword(model.Password),
                         Rolid = model.Rolid,
                         Creationdate = DateTime.Now,
-                        Statusid = model.Statusid,
+                        Statusid = 1 //In DB active status have id 1
                     };
 
                     userRep.InsertUser(ContextDB, user);
