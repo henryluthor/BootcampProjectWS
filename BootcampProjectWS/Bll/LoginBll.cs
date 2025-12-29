@@ -39,6 +39,7 @@ namespace BootcampProjectWS.Bll
                                 StatusCode = 200,
                                 Data = new LoginResponseModel
                                 {
+                                    LoginSuccessful = true,
                                     UserName = userFound.Username,
                                     Token = (new MethodsHelper()).CreateTokenSession(userFound.Userid)
                                 },

@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hp\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\BootcampProjectWS.csproj": {}
+    "C:\\Users\\bruno\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\BootcampProjectWS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hp\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\BootcampProjectWS.csproj": {
+    "C:\\Users\\bruno\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\BootcampProjectWS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hp\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\BootcampProjectWS.csproj",
+        "projectUniqueName": "C:\\Users\\bruno\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\BootcampProjectWS.csproj",
         "projectName": "BootcampProjectWS",
-        "projectPath": "C:\\Users\\hp\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\BootcampProjectWS.csproj",
-        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hp\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\obj\\",
+        "projectPath": "C:\\Users\\bruno\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\BootcampProjectWS.csproj",
+        "packagesPath": "C:\\Users\\bruno\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bruno\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bruno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\hp\\source\\repos\\BootcampProjectWS\\LibraryMethod\\LibraryMethod.csproj": {
-                "projectPath": "C:\\Users\\hp\\source\\repos\\BootcampProjectWS\\LibraryMethod\\LibraryMethod.csproj"
+              "C:\\Users\\bruno\\source\\repos\\BootcampProjectWS\\LibraryMethod\\LibraryMethod.csproj": {
+                "projectPath": "C:\\Users\\bruno\\source\\repos\\BootcampProjectWS\\LibraryMethod\\LibraryMethod.csproj"
               }
             }
           }
@@ -43,7 +47,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -91,21 +96,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\hp\\source\\repos\\BootcampProjectWS\\LibraryMethod\\LibraryMethod.csproj": {
+    "C:\\Users\\bruno\\source\\repos\\BootcampProjectWS\\LibraryMethod\\LibraryMethod.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hp\\source\\repos\\BootcampProjectWS\\LibraryMethod\\LibraryMethod.csproj",
+        "projectUniqueName": "C:\\Users\\bruno\\source\\repos\\BootcampProjectWS\\LibraryMethod\\LibraryMethod.csproj",
         "projectName": "LibraryMethod",
-        "projectPath": "C:\\Users\\hp\\source\\repos\\BootcampProjectWS\\LibraryMethod\\LibraryMethod.csproj",
-        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hp\\source\\repos\\BootcampProjectWS\\LibraryMethod\\obj\\",
+        "projectPath": "C:\\Users\\bruno\\source\\repos\\BootcampProjectWS\\LibraryMethod\\LibraryMethod.csproj",
+        "packagesPath": "C:\\Users\\bruno\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bruno\\source\\repos\\BootcampProjectWS\\LibraryMethod\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bruno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -130,7 +139,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -157,7 +167,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -42,6 +42,12 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+// Copied here
+app.UseAuthorization();
+
+// Copied here
+app.MapControllers();
+
 //new line
 //app.UseCors(MyAllowSpecificOrigins);
 //new block
@@ -51,8 +57,10 @@ app.UseCors(policy =>
     .AllowAnyHeader()
 );
 
-app.UseAuthorization();
+// Originally here
+//app.UseAuthorization();
 
-app.MapControllers();
+// Originally here
+//app.MapControllers();
 
 app.Run();

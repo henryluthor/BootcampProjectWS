@@ -1,197 +1,204 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\hp\\source\\repos\\BootcampProjectWS\\",
+  "WorkspaceRootPath": "C:\\Users\\bruno\\source\\repos\\BootcampProjectWS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4674A9D6-4812-4AB6-B2EC-902E9736F8CD}|BootcampProjectWS\\BootcampProjectWS.csproj|c:\\users\\hp\\source\\repos\\bootcampprojectws\\bootcampprojectws\\bll\\userbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4674A9D6-4812-4AB6-B2EC-902E9736F8CD}|BootcampProjectWS\\BootcampProjectWS.csproj|solutionrelative:bootcampprojectws\\bll\\userbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4674A9D6-4812-4AB6-B2EC-902E9736F8CD}|BootcampProjectWS\\BootcampProjectWS.csproj|c:\\users\\bruno\\source\\repos\\bootcampprojectws\\bootcampprojectws\\bll\\loginbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4674A9D6-4812-4AB6-B2EC-902E9736F8CD}|BootcampProjectWS\\BootcampProjectWS.csproj|solutionrelative:bootcampprojectws\\bll\\loginbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4674A9D6-4812-4AB6-B2EC-902E9736F8CD}|BootcampProjectWS\\BootcampProjectWS.csproj|c:\\users\\hp\\source\\repos\\bootcampprojectws\\bootcampprojectws\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4674A9D6-4812-4AB6-B2EC-902E9736F8CD}|BootcampProjectWS\\BootcampProjectWS.csproj|c:\\users\\bruno\\source\\repos\\bootcampprojectws\\bootcampprojectws\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4674A9D6-4812-4AB6-B2EC-902E9736F8CD}|BootcampProjectWS\\BootcampProjectWS.csproj|solutionrelative:bootcampprojectws\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4674A9D6-4812-4AB6-B2EC-902E9736F8CD}|BootcampProjectWS\\BootcampProjectWS.csproj|c:\\users\\bruno\\source\\repos\\bootcampprojectws\\bootcampprojectws\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4674A9D6-4812-4AB6-B2EC-902E9736F8CD}|BootcampProjectWS\\BootcampProjectWS.csproj|solutionrelative:bootcampprojectws\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4674A9D6-4812-4AB6-B2EC-902E9736F8CD}|BootcampProjectWS\\BootcampProjectWS.csproj|c:\\users\\hp\\source\\repos\\bootcampprojectws\\bootcampprojectws\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4674A9D6-4812-4AB6-B2EC-902E9736F8CD}|BootcampProjectWS\\BootcampProjectWS.csproj|solutionrelative:bootcampprojectws\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4674A9D6-4812-4AB6-B2EC-902E9736F8CD}|BootcampProjectWS\\BootcampProjectWS.csproj|c:\\users\\bruno\\source\\repos\\bootcampprojectws\\bootcampprojectws\\bll\\userbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4674A9D6-4812-4AB6-B2EC-902E9736F8CD}|BootcampProjectWS\\BootcampProjectWS.csproj|solutionrelative:bootcampprojectws\\bll\\userbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4674A9D6-4812-4AB6-B2EC-902E9736F8CD}|BootcampProjectWS\\BootcampProjectWS.csproj|c:\\users\\hp\\source\\repos\\bootcampprojectws\\bootcampprojectws\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4674A9D6-4812-4AB6-B2EC-902E9736F8CD}|BootcampProjectWS\\BootcampProjectWS.csproj|solutionrelative:bootcampprojectws\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4674A9D6-4812-4AB6-B2EC-902E9736F8CD}|BootcampProjectWS\\BootcampProjectWS.csproj|c:\\users\\bruno\\source\\repos\\bootcampprojectws\\bootcampprojectws\\dbmodels\\bootcampprojectcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4674A9D6-4812-4AB6-B2EC-902E9736F8CD}|BootcampProjectWS\\BootcampProjectWS.csproj|solutionrelative:bootcampprojectws\\dbmodels\\bootcampprojectcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4674A9D6-4812-4AB6-B2EC-902E9736F8CD}|BootcampProjectWS\\BootcampProjectWS.csproj|c:\\users\\hp\\source\\repos\\bootcampprojectws\\bootcampprojectws\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4674A9D6-4812-4AB6-B2EC-902E9736F8CD}|BootcampProjectWS\\BootcampProjectWS.csproj|solutionrelative:bootcampprojectws\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4674A9D6-4812-4AB6-B2EC-902E9736F8CD}|BootcampProjectWS\\BootcampProjectWS.csproj|c:\\users\\bruno\\source\\repos\\bootcampprojectws\\bootcampprojectws\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4674A9D6-4812-4AB6-B2EC-902E9736F8CD}|BootcampProjectWS\\BootcampProjectWS.csproj|solutionrelative:bootcampprojectws\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4674A9D6-4812-4AB6-B2EC-902E9736F8CD}|BootcampProjectWS\\BootcampProjectWS.csproj|c:\\users\\hp\\source\\repos\\bootcampprojectws\\bootcampprojectws\\repository\\clientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4674A9D6-4812-4AB6-B2EC-902E9736F8CD}|BootcampProjectWS\\BootcampProjectWS.csproj|solutionrelative:bootcampprojectws\\repository\\clientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4674A9D6-4812-4AB6-B2EC-902E9736F8CD}|BootcampProjectWS\\BootcampProjectWS.csproj|c:\\users\\hp\\source\\repos\\bootcampprojectws\\bootcampprojectws\\bootcampprojectws.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{4674A9D6-4812-4AB6-B2EC-902E9736F8CD}|BootcampProjectWS\\BootcampProjectWS.csproj|solutionrelative:bootcampprojectws\\bootcampprojectws.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4674A9D6-4812-4AB6-B2EC-902E9736F8CD}|BootcampProjectWS\\BootcampProjectWS.csproj|c:\\users\\hp\\source\\repos\\bootcampprojectws\\bootcampprojectws\\filters\\sessionuserfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4674A9D6-4812-4AB6-B2EC-902E9736F8CD}|BootcampProjectWS\\BootcampProjectWS.csproj|solutionrelative:bootcampprojectws\\filters\\sessionuserfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4674A9D6-4812-4AB6-B2EC-902E9736F8CD}|BootcampProjectWS\\BootcampProjectWS.csproj|c:\\users\\hp\\source\\repos\\bootcampprojectws\\bootcampprojectws\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4674A9D6-4812-4AB6-B2EC-902E9736F8CD}|BootcampProjectWS\\BootcampProjectWS.csproj|solutionrelative:bootcampprojectws\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4674A9D6-4812-4AB6-B2EC-902E9736F8CD}|BootcampProjectWS\\BootcampProjectWS.csproj|c:\\users\\hp\\source\\repos\\bootcampprojectws\\bootcampprojectws\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{4674A9D6-4812-4AB6-B2EC-902E9736F8CD}|BootcampProjectWS\\BootcampProjectWS.csproj|c:\\users\\bruno\\source\\repos\\bootcampprojectws\\bootcampprojectws\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{4674A9D6-4812-4AB6-B2EC-902E9736F8CD}|BootcampProjectWS\\BootcampProjectWS.csproj|solutionrelative:bootcampprojectws\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4674A9D6-4812-4AB6-B2EC-902E9736F8CD}|BootcampProjectWS\\BootcampProjectWS.csproj|c:\\users\\hp\\source\\repos\\bootcampprojectws\\bootcampprojectws\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4674A9D6-4812-4AB6-B2EC-902E9736F8CD}|BootcampProjectWS\\BootcampProjectWS.csproj|solutionrelative:bootcampprojectws\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4674A9D6-4812-4AB6-B2EC-902E9736F8CD}|BootcampProjectWS\\BootcampProjectWS.csproj|c:\\users\\bruno\\source\\repos\\bootcampprojectws\\bootcampprojectws\\repository\\clientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4674A9D6-4812-4AB6-B2EC-902E9736F8CD}|BootcampProjectWS\\BootcampProjectWS.csproj|solutionrelative:bootcampprojectws\\repository\\clientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4674A9D6-4812-4AB6-B2EC-902E9736F8CD}|BootcampProjectWS\\BootcampProjectWS.csproj|c:\\users\\bruno\\source\\repos\\bootcampprojectws\\bootcampprojectws\\bootcampprojectws.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4674A9D6-4812-4AB6-B2EC-902E9736F8CD}|BootcampProjectWS\\BootcampProjectWS.csproj|solutionrelative:bootcampprojectws\\bootcampprojectws.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4674A9D6-4812-4AB6-B2EC-902E9736F8CD}|BootcampProjectWS\\BootcampProjectWS.csproj|c:\\users\\bruno\\source\\repos\\bootcampprojectws\\bootcampprojectws\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4674A9D6-4812-4AB6-B2EC-902E9736F8CD}|BootcampProjectWS\\BootcampProjectWS.csproj|solutionrelative:bootcampprojectws\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "DockedHeight": 384,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\Repository\\UserRepository.cs",
-              "RelativeDocumentMoniker": "BootcampProjectWS\\Repository\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\Repository\\UserRepository.cs",
-              "RelativeToolTip": "BootcampProjectWS\\Repository\\UserRepository.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAiwA8AAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T21:57:53.412Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RoleController.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\Controllers\\RoleController.cs",
-              "RelativeDocumentMoniker": "BootcampProjectWS\\Controllers\\RoleController.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\Controllers\\RoleController.cs",
-              "RelativeToolTip": "BootcampProjectWS\\Controllers\\RoleController.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAwBMAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "LoginBll.cs",
+              "DocumentMoniker": "C:\\Users\\bruno\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\Bll\\LoginBll.cs",
+              "RelativeDocumentMoniker": "BootcampProjectWS\\Bll\\LoginBll.cs",
+              "ToolTip": "C:\\Users\\bruno\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\Bll\\LoginBll.cs",
+              "RelativeToolTip": "BootcampProjectWS\\Bll\\LoginBll.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowCkAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T16:07:23.949Z"
+              "WhenOpened": "2025-12-29T16:24:11.647Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 6,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\bruno\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\appsettings.json",
               "RelativeDocumentMoniker": "BootcampProjectWS\\appsettings.json",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\appsettings.json",
+              "ToolTip": "C:\\Users\\bruno\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\appsettings.json",
               "RelativeToolTip": "BootcampProjectWS\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-05-16T16:07:15.124Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\Controllers\\UserController.cs",
+              "DocumentMoniker": "C:\\Users\\bruno\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "BootcampProjectWS\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\bruno\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\Controllers\\UserController.cs",
               "RelativeToolTip": "BootcampProjectWS\\Controllers\\UserController.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAQwCkAAAAMAAAA",
+              "ViewState": "AgIAABsAAAAAAAAAAAAawCUAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T19:45:50.617Z"
+              "WhenOpened": "2024-05-10T19:45:50.617Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "UserBll.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\Bll\\UserBll.cs",
+              "DocumentMoniker": "C:\\Users\\bruno\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\Bll\\UserBll.cs",
               "RelativeDocumentMoniker": "BootcampProjectWS\\Bll\\UserBll.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\Bll\\UserBll.cs",
+              "ToolTip": "C:\\Users\\bruno\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\Bll\\UserBll.cs",
               "RelativeToolTip": "BootcampProjectWS\\Bll\\UserBll.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAiwC0AAABEAAAA",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowC0AAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-09T23:42:21.502Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "TestController.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\Controllers\\TestController.cs",
+              "DocumentMoniker": "C:\\Users\\bruno\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\Controllers\\TestController.cs",
               "RelativeDocumentMoniker": "BootcampProjectWS\\Controllers\\TestController.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\Controllers\\TestController.cs",
+              "ToolTip": "C:\\Users\\bruno\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\Controllers\\TestController.cs",
               "RelativeToolTip": "BootcampProjectWS\\Controllers\\TestController.cs",
               "ViewState": "AQIAADkAAAAAAAAAAAAAAEUAAABZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T19:21:17.964Z"
+              "WhenOpened": "2024-05-13T19:21:17.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\bruno\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "BootcampProjectWS\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\bruno\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "BootcampProjectWS\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAASwCkAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T21:38:19.748Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "ClientRepository.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\Repository\\ClientRepository.cs",
-              "RelativeDocumentMoniker": "BootcampProjectWS\\Repository\\ClientRepository.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\Repository\\ClientRepository.cs",
-              "RelativeToolTip": "BootcampProjectWS\\Repository\\ClientRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABSAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\bruno\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\Program.cs",
+              "RelativeDocumentMoniker": "BootcampProjectWS\\Program.cs",
+              "ToolTip": "C:\\Users\\bruno\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\Program.cs",
+              "RelativeToolTip": "BootcampProjectWS\\Program.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T17:06:08.022Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "SessionUserFilter.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\Filters\\SessionUserFilter.cs",
-              "RelativeDocumentMoniker": "BootcampProjectWS\\Filters\\SessionUserFilter.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\Filters\\SessionUserFilter.cs",
-              "RelativeToolTip": "BootcampProjectWS\\Filters\\SessionUserFilter.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAQAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T12:50:27.056Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BootcampProjectWS.csproj",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\BootcampProjectWS.csproj",
-              "RelativeDocumentMoniker": "BootcampProjectWS\\BootcampProjectWS.csproj",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\BootcampProjectWS.csproj",
-              "RelativeToolTip": "BootcampProjectWS\\BootcampProjectWS.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-03-24T15:29:57.349Z"
+              "WhenOpened": "2024-03-25T02:44:35.707Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ClientController.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\Controllers\\ClientController.cs",
-              "RelativeDocumentMoniker": "BootcampProjectWS\\Controllers\\ClientController.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\Controllers\\ClientController.cs",
-              "RelativeToolTip": "BootcampProjectWS\\Controllers\\ClientController.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAA1wBwAAAA4AAAA",
+              "Title": "BootcampprojectContext.cs",
+              "DocumentMoniker": "C:\\Users\\bruno\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\DBModels\\BootcampprojectContext.cs",
+              "RelativeDocumentMoniker": "BootcampProjectWS\\DBModels\\BootcampprojectContext.cs",
+              "ToolTip": "C:\\Users\\bruno\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\DBModels\\BootcampprojectContext.cs",
+              "RelativeToolTip": "BootcampProjectWS\\DBModels\\BootcampprojectContext.cs",
+              "ViewState": "AgIAAPUAAAAAAAAAAAAowDgBAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-24T21:39:56.723Z"
+              "WhenOpened": "2025-11-10T22:09:52.924Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\Program.cs",
-              "RelativeDocumentMoniker": "BootcampProjectWS\\Program.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\Program.cs",
-              "RelativeToolTip": "BootcampProjectWS\\Program.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAACBjwB0AAACNAAAA",
+              "DocumentIndex": 7,
+              "Title": "ClientRepository.cs",
+              "DocumentMoniker": "C:\\Users\\bruno\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\Repository\\ClientRepository.cs",
+              "RelativeDocumentMoniker": "BootcampProjectWS\\Repository\\ClientRepository.cs",
+              "ToolTip": "C:\\Users\\bruno\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\Repository\\ClientRepository.cs",
+              "RelativeToolTip": "BootcampProjectWS\\Repository\\ClientRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABSAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T02:44:35.707Z"
+              "WhenOpened": "2024-03-25T17:06:08.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BootcampProjectWS.csproj",
+              "DocumentMoniker": "C:\\Users\\bruno\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\BootcampProjectWS.csproj",
+              "RelativeDocumentMoniker": "BootcampProjectWS\\BootcampProjectWS.csproj",
+              "ToolTip": "C:\\Users\\bruno\\source\\repos\\BootcampProjectWS\\BootcampProjectWS\\BootcampProjectWS.csproj",
+              "RelativeToolTip": "BootcampProjectWS\\BootcampProjectWS.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-24T15:29:57.349Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 145,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }

@@ -308,7 +308,7 @@ public partial class BootcampprojectContext : DbContext
 
         modelBuilder.Entity<User>(entity =>
         {
-            entity.ToTable("user");
+            entity.ToTable("systemuser");
 
             entity.HasIndex(e => e.Username, "UQ_user").IsUnique();
 

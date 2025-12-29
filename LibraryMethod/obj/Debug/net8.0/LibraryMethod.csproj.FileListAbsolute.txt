@@ -11,3 +11,16 @@ C:\Users\hp\source\repos\BootcampProjectWS\LibraryMethod\obj\Debug\net8.0\Librar
 C:\Users\hp\source\repos\BootcampProjectWS\LibraryMethod\obj\Debug\net8.0\refint\LibraryMethod.dll
 C:\Users\hp\source\repos\BootcampProjectWS\LibraryMethod\obj\Debug\net8.0\LibraryMethod.pdb
 C:\Users\hp\source\repos\BootcampProjectWS\LibraryMethod\obj\Debug\net8.0\ref\LibraryMethod.dll
+C:\Users\bruno\source\repos\BootcampProjectWS\LibraryMethod\bin\Debug\net8.0\LibraryMethod.deps.json
+C:\Users\bruno\source\repos\BootcampProjectWS\LibraryMethod\bin\Debug\net8.0\LibraryMethod.dll
+C:\Users\bruno\source\repos\BootcampProjectWS\LibraryMethod\bin\Debug\net8.0\LibraryMethod.pdb
+C:\Users\bruno\source\repos\BootcampProjectWS\LibraryMethod\obj\Debug\net8.0\LibraryMethod.csproj.AssemblyReference.cache
+C:\Users\bruno\source\repos\BootcampProjectWS\LibraryMethod\obj\Debug\net8.0\LibraryMethod.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bruno\source\repos\BootcampProjectWS\LibraryMethod\obj\Debug\net8.0\LibraryMethod.AssemblyInfoInputs.cache
+C:\Users\bruno\source\repos\BootcampProjectWS\LibraryMethod\obj\Debug\net8.0\LibraryMethod.AssemblyInfo.cs
+C:\Users\bruno\source\repos\BootcampProjectWS\LibraryMethod\obj\Debug\net8.0\LibraryMethod.csproj.CoreCompileInputs.cache
+C:\Users\bruno\source\repos\BootcampProjectWS\LibraryMethod\obj\Debug\net8.0\LibraryMethod.sourcelink.json
+C:\Users\bruno\source\repos\BootcampProjectWS\LibraryMethod\obj\Debug\net8.0\LibraryMethod.dll
+C:\Users\bruno\source\repos\BootcampProjectWS\LibraryMethod\obj\Debug\net8.0\refint\LibraryMethod.dll
+C:\Users\bruno\source\repos\BootcampProjectWS\LibraryMethod\obj\Debug\net8.0\LibraryMethod.pdb
+C:\Users\bruno\source\repos\BootcampProjectWS\LibraryMethod\obj\Debug\net8.0\ref\LibraryMethod.dll
