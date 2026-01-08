@@ -1,6 +1,11 @@
 ﻿using BootcampProjectWS.DBModels;
 using Microsoft.AspNetCore.Mvc;
 using BootcampProjectWS.Classes;
+using Microsoft.EntityFrameworkCore;
+using System.Security.Cryptography;
+using System.Text;
+using System.IdentityModel.Tokens.Jwt;
+using Microsoft.IdentityModel.Tokens;
 
 namespace BootcampProjectWS.Controllers
 {
@@ -20,9 +25,144 @@ namespace BootcampProjectWS.Controllers
 
         // Generate token and create cookie to store token
         [HttpPost("login")]
-        public void Login([FromBody] LoginRequest loginRequest)
+        public async Task<IActionResult> Login([FromBody] LoginRequest loginRequest)
         {
             // Need LoginResponse object to generate token
+            LoginResponse loginResponse = new LoginResponse(_configuration);
+
+            var token = String.Empty;
+
+            // Authenticate user
+            // Check if email exist in DB
+            var systemUser = new User();
+
+            try
+            {
+                systemUser = await _context.Users.FirstOrDefaultAsync(u => u.Email  == loginRequest.Email);
+                if(systemUser != null)
+                {
+                    // Hash the received password and check if it matches the hash in DB
+                    SHA512 hashSvc = SHA512.Create();
+                    byte[] hash = hashSvc.ComputeHash(Encoding.UTF8.GetBytes(loginRequest.Password));
+                    string hashString = BitConverter.ToString(hash).Replace("-", "");
+
+                    if(systemUser.Password == hashString)
+                    {
+                        // Access granted
+                        string username;
+                        if(systemUser.Username != null)
+                        {
+                            username = systemUser.Username;
+                        }
+                        else
+                        {
+                            username = "Generic name";
+                        }
+                        token = loginResponse.GenerateToken(systemUser.Userid.ToString(), username);
+
+                        var cookieOptions = new CookieOptions
+                        {
+                            //HttpOnly = false,
+                            Secure = true,
+                            Domain = "localhost",
+                            Path = "/",
+                            Expires = DateTime.UtcNow.AddHours(cookieExpirationHours),
+                            //IsEssential = true,
+                            SameSite = SameSiteMode.None,
+                        };
+                        Response.Cookies.Append("token", token, cookieOptions);
+
+                        // This is how you set text in the body of the HttpResponse
+                        //await Response.WriteAsync("Hello, this is the HttpResponse body");
+                        //return Ok();
+
+                        // This is how you set an object in the body of the HttpResponse
+                        //var persona = new
+                        //{
+                        //    Name = "Juan",
+                        //    Age = 30
+                        //};
+                        //await Response.WriteAsJsonAsync(persona);
+                        //return Ok();
+
+                        // This is how you set an object as an action result
+                        //var persona = new
+                        //{
+                        //    Name = "Juan",
+                        //    Age = 30
+                        //};
+                        //return Ok(persona);
+
+                        return Ok(new {authenticated = true});
+                    }
+                    else
+                    {
+                        // Incorrect user or password
+                        return Unauthorized();
+                    }
+                }
+                else
+                {
+                    return NotFound();
+                }
+            }
+            catch
+            {
+                return BadRequest();
+            }
+        }
+
+        // Verify token
+        [HttpGet("authenticated")]
+        public IActionResult Authenticated()
+        {
+            // var token = Request.Cookies["token"]; // this is another way of doing the following line
+            var token = HttpContext.Request.Cookies["token"];
+
+            if(token == null)
+            {
+                return Unauthorized();
+            }
+
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var validationParameters = new TokenValidationParameters
+            {
+                ValidateIssuer = true,
+                ValidateAudience = true,
+                ValidateLifetime = true,
+                ValidateIssuerSigningKey = true,
+                ValidIssuer = "MyISP-WS", //check this
+                ValidAudience = "my-isp-web-app", //check this
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("H7YVZWs1TnxVF8tCOCLF2/RJRy0FK3Hk")) //check this
+            };
+
+            try
+            {
+                var claimsPrincipal = tokenHandler.ValidateToken(token, validationParameters, out var securityToken);
+
+                if(securityToken is JwtSecurityToken jwtSecurityToken)
+                {
+                    var expirationDate = jwtSecurityToken.ValidTo;
+
+                    if(expirationDate < DateTime.UtcNow)
+                    {
+                        // Token has expired
+                        return Unauthorized();
+                    }
+
+                    return Ok(new {authenticated = true});
+                }
+                else
+                {
+                    // Token is not JWT
+                    return Unauthorized();
+                }
+            }
+            catch(SecurityTokenException ex)
+            {
+                // Token is invalid
+                return Unauthorized();
+            }
         }
     }
 }
