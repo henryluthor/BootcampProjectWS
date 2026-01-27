@@ -1,11 +1,12 @@
-﻿using BootcampProjectWS.DBModels;
+﻿using BootcampProjectWS.Classes;
+using BootcampProjectWS.DBModels;
+using BootcampProjectWS.Helpers;
+using BootcampProjectWS.Models;
+using BootcampProjectWS.Repository;
 using Microsoft.AspNetCore.Mvc;
-using BootcampProjectWS.Classes;
-using Microsoft.EntityFrameworkCore;
-using System.Security.Cryptography;
-using System.Text;
-using System.IdentityModel.Tokens.Jwt;
 using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Text;
 
 namespace BootcampProjectWS.Controllers
 {
@@ -25,80 +26,74 @@ namespace BootcampProjectWS.Controllers
 
         // Generate token and create cookie to store token
         [HttpPost("login")]
-        public async Task<IActionResult> Login([FromBody] LoginRequest loginRequest)
+        public IActionResult Login([FromBody] LoginRequestModel loginRequestModel)
         {
             // Need LoginResponse object to generate token
             LoginResponse loginResponse = new LoginResponse(_configuration);
 
             var token = String.Empty;
 
-            // Authenticate user
-            // Check if email exist in DB
-            var systemUser = new User();
-
             try
             {
-                systemUser = await _context.Users.FirstOrDefaultAsync(u => u.Email  == loginRequest.Email);
-                if(systemUser != null)
-                {
-                    // Hash the received password and check if it matches the hash in DB
-                    SHA512 hashSvc = SHA512.Create();
-                    byte[] hash = hashSvc.ComputeHash(Encoding.UTF8.GetBytes(loginRequest.Password));
-                    string hashString = BitConverter.ToString(hash).Replace("-", "");
+                UserRepository userRep = new UserRepository();
+                User userFound = userRep.SelectUserByUsername(_context, loginRequestModel.userName);
 
-                    if(systemUser.Password == hashString)
+                if (userFound != null) // if a user was found
+                {
+                    // verify user status is ACTIVE - statusId = 1
+                    if (userFound.Statusid == 1)
                     {
-                        // Access granted
-                        string username;
-                        if(systemUser.Username != null)
+                        // verify passwords match
+                        string passFindDecrypted = (new MethodsEncryptHelper().DecryptPassword(userFound.Password));
+
+                        if (passFindDecrypted == loginRequestModel.password)
                         {
-                            username = systemUser.Username;
+                            //login was successful
+                            token = loginResponse.GenerateToken(userFound.Userid.ToString(), userFound.Username);
+
+                            var cookieOptions = new CookieOptions
+                            {
+                                //HttpOnly = false,
+                                Secure = true,
+                                Domain = "localhost",
+                                Path = "/",
+                                Expires = DateTime.UtcNow.AddHours(cookieExpirationHours),
+                                //IsEssential = true,
+                                SameSite = SameSiteMode.None,
+                            };
+                            Response.Cookies.Append("token", token, cookieOptions);
+
+                            // This is how you set text in the body of the HttpResponse
+                            //await Response.WriteAsync("Hello, this is the HttpResponse body");
+                            //return Ok();
+
+                            // This is how you set an object in the body of the HttpResponse
+                            //var persona = new
+                            //{
+                            //    Name = "Juan",
+                            //    Age = 30
+                            //};
+                            //await Response.WriteAsJsonAsync(persona);
+                            //return Ok();
+
+                            // This is how you set an object as an action result
+                            //var persona = new
+                            //{
+                            //    Name = "Juan",
+                            //    Age = 30
+                            //};
+                            //return Ok(persona);
+
+                            return Ok(new { authenticated = true });
                         }
                         else
                         {
-                            username = "Generic name";
+                            return Unauthorized();
                         }
-                        token = loginResponse.GenerateToken(systemUser.Userid.ToString(), username);
-
-                        var cookieOptions = new CookieOptions
-                        {
-                            //HttpOnly = false,
-                            Secure = true,
-                            Domain = "localhost",
-                            Path = "/",
-                            Expires = DateTime.UtcNow.AddHours(cookieExpirationHours),
-                            //IsEssential = true,
-                            SameSite = SameSiteMode.None,
-                        };
-                        Response.Cookies.Append("token", token, cookieOptions);
-
-                        // This is how you set text in the body of the HttpResponse
-                        //await Response.WriteAsync("Hello, this is the HttpResponse body");
-                        //return Ok();
-
-                        // This is how you set an object in the body of the HttpResponse
-                        //var persona = new
-                        //{
-                        //    Name = "Juan",
-                        //    Age = 30
-                        //};
-                        //await Response.WriteAsJsonAsync(persona);
-                        //return Ok();
-
-                        // This is how you set an object as an action result
-                        //var persona = new
-                        //{
-                        //    Name = "Juan",
-                        //    Age = 30
-                        //};
-                        //return Ok(persona);
-
-                        return Ok(new {authenticated = true});
                     }
                     else
                     {
-                        // Incorrect user or password
-                        return Unauthorized();
+                        return NotFound();
                     }
                 }
                 else
@@ -110,6 +105,7 @@ namespace BootcampProjectWS.Controllers
             {
                 return BadRequest();
             }
+            
         }
 
         // Verify token

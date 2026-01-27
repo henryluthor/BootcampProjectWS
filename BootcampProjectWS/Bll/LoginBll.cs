@@ -28,7 +28,6 @@ namespace BootcampProjectWS.Bll
                     if (userFound.Statusid == 1)
                     {
                         // verify passwords match
-
                         string passFindDecrypted = (new MethodsEncryptHelper().DecryptPassword(userFound.Password));
 
                         if (passFindDecrypted == model.password)

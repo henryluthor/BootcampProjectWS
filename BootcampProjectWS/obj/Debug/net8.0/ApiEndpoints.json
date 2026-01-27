@@ -1,5 +1,42 @@
 [
   {
+    "ContainingType": "BootcampProjectWS.Controllers.AuthController",
+    "Method": "Authenticated",
+    "RelativePath": "api/{controller}/authenticated",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BootcampProjectWS.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/{controller}/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginRequestModel",
+        "Type": "BootcampProjectWS.Models.LoginRequestModel",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "BootcampProjectWS.Controllers.ClientController",
     "Method": "Get",
     "RelativePath": "api/Client",

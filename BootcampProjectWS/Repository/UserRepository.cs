@@ -1,5 +1,7 @@
 ﻿using BootcampProjectWS.DBModels;
 using BootcampProjectWS.Models;
+using Microsoft.EntityFrameworkCore;
+using System.Threading.Tasks;
 
 namespace BootcampProjectWS.Repository
 {
